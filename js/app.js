@@ -19,11 +19,11 @@
 			$('.map').gmap3({
 				map: {
 					options: {
-						maxZoom: 14 
+						maxZoom: 17 
 					}  
 				},
 				marker:{
-					address: "40 Sibley St, Detroit",
+					address: "ebais, escazú",
 					options: {
 						icon: new google.maps.MarkerImage(
 							"images/map-marker.png",

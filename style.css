@@ -116,7 +116,7 @@ p { margin-top: 0; }
   cambio de imagenes
   reacomodo de tamaños*/
 .feature { text-align: center; }
-.feature .feature-icon { width: 250px; height: 250px; border-radius: 50%; text-align: center; margin-bottom: 20px; display: inline-block; }
+.feature .feature-icon { width: 150px; height: 150px; border-radius: 50%; text-align: center; margin-bottom: 20px; display: inline-block; }
 .feature .feature-icon [class^="icon-"] { font-size: 100px; font-size: 6.25rem; color: #f2efdc; }
 .feature .feature-title { font-size: 24px; font-size: 1.5rem; margin: 0 0 10px; }
 .feature.color-purple .feature-icon { background-color: #48172d; }

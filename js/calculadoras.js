@@ -74,13 +74,11 @@ var pesoIdeal = function(){
 	//Despliega el resultado
 	var desplegar_resultado = "Su peso ideal sería estar en "+Math.floor(pI)+" kg.";
 	var recomendacion;
-	if (pI = peso) {
-		recomendacion = "<a href='offer.html#peso_normal'>Ver dieta recomendada</a>";
-	} else if (pI > peso) { 
+	if (pI > peso) { 
 		recomendacion = "<a href='offer.html#bajo_peso'>Ver dieta recomendada</a>";
 	} else if (pI < peso) {
 		recomendacion = "<a href='offer.html#sobre_peso'>Ver dieta recomendada</a>";
-	}
+	} else {recomendacion = "<a href='offer.html#peso_normal'>Ver dieta recomendada</a>";}
 	
 	document.getElementById("resultado_pesoideal").innerHTML = desplegar_resultado;
 	document.getElementById("recomendacion_pesoideal").innerHTML = recomendacion;
@@ -118,7 +116,12 @@ var imc = function(){
 	
 	//Informa del resultado, toFixed(2) -> lo da en 2 decimales
 	var desplegar_resultado = "Su IMC es de "+tuIMC.toFixed(2)+ resultadoIMC;
+	var recomendacion;
+	if (tuIMC <= 18.5){recomendacion = "Se recomienda aumentar de peso. Utilize nuestra calculadora de " + "<a href='Peso_Ideal.html'>peso ideal</a>" + " para conocer en que peso deberia estar y obtener una dieta recomendada";}
+	else if (tuIMC>=25 && tuIMC<=29.9){recomendacion = "Se recomienda adoptar una " + "<a href='recipe.html'>alimentación equilibrada</a>" + " y realizar actividad física de manera regular para llegar al peso ideal";}
+	else if (tuIMC>30){recomendacion = "Se recomienda visitar al médico para que realice una evaluación y recomiende una dieta";}
 	document.getElementById("resultado_imc").innerHTML = desplegar_resultado;
+	document.getElementById("recomendacion_imc").innerHTML = recomendacion;	
 }//#####################################----FIN FUNCION IMC----#####################################################
 
 

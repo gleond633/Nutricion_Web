@@ -36,7 +36,8 @@
     text-align: center;
 }
 
-#resultado_metabolismo, #resultado_pesoideal, #resultado_imc, #resultado_icc, #resultado_ict {
+#resultado_metabolismo, #resultado_pesoideal, #resultado_imc, #resultado_icc, #resultado_ict, #recomendacion_pesoideal,
+#recomendacion_imc {
     text-align: center;
     color: white;
 }

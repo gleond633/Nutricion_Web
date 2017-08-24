@@ -65,14 +65,25 @@ var pesoIdeal = function(){
 	var sexo = peso_ideal_genero();
 	var edad = document.getElementById("peso_ideal_edad").value;
 	var altura = document.getElementById("peso_ideal_altura").value;
+	var peso = document.getElementById("peso_ideal_peso").value;
 
 //----------------------------CALCULO DE LA FORMULA----------------------------------------
 	if(sexo == "hombre" ){var k=4;} else if(sexo == "mujer" ){var k=2.5} //Hombres -> k = 4, Mujeres -> 2,5
 	var pI = altura -100 - ((altura - 150) / 4) + ((edad - 20) / k)
 	
-	//Nos avisa del resultado con una alerta
+	//Despliega el resultado
 	var desplegar_resultado = "Su peso ideal sería estar en "+Math.floor(pI)+" kg.";
+	var recomendacion;
+	if (pI = peso) {
+		recomendacion = "<a href='offer.html#peso_normal'>Ver dieta recomendada</a>";
+	} else if (pI > peso) { 
+		recomendacion = "<a href='offer.html#bajo_peso'>Ver dieta recomendada</a>";
+	} else if (pI < peso) {
+		recomendacion = "<a href='offer.html#sobre_peso'>Ver dieta recomendada</a>";
+	}
+	
 	document.getElementById("resultado_pesoideal").innerHTML = desplegar_resultado;
+	document.getElementById("recomendacion_pesoideal").innerHTML = recomendacion;
 }//#####################################----FIN FUNCION PESO IDEAL----##############################################
 
 

@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		
 		<title>Sanisimo</title>
 		<!-- Loading third party fonts -->
@@ -13,6 +14,16 @@
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="style_calcs.css">
+
+		<!-- Slider -->
+		<link rel="stylesheet" href="FlexSlider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+		 $(window).load(function() {
+   		 $('.flexslider').flexslider();
+  		});
+        </script>
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -54,6 +65,38 @@
 				</div>
 			</header> <!-- .site-header -->
 
+			<body>
+    <div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="images/slider1.jpg" alt="">
+				<section class="flex-caption">
+					<p>Sanisimo<br>Su aliado de la salud</p>
+				</section>
+			</li>
+			<li>
+				<img src="images/slider2.jpg" alt="">
+				<section class="flex-caption">
+						<p>Sanisimo<br>Su aliado de la salud</p>
+				</section>
+			</li>
+			<li>
+				<img src="images/slider3.jpg" alt="">
+				<section class="flex-caption">
+						<p>Sanisimo<br>Su aliado de la salud</p>
+				</section>
+			</li>
+			<li>
+				<img src="images/slider4.jpg" alt="">
+				<section class="flex-caption">
+						<p>Sanisimo<br>Su aliado de la salud</p>
+				</section>
+			</li>
+	     </ul>
+	</div>
+	</body>
+
+ <!-- .site-header
 			<div class="hero">
 				<div class="container">
 					<i class="icon-cupcake logo"></i>
@@ -61,6 +104,7 @@
 					<small class="site-description">Su aliado de la salud</small>
 				</div>
 			</div>
+-->
 
 			<main class="main-content">
 				<div class="fullwidth-block cooking-section category-block">

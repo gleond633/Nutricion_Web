@@ -667,11 +667,18 @@ Separar de la de Nelson*/
 /* Footer Styles */
 .site-footer { text-align: center; padding: 50px 0; background-color: white; color: #9d9879; }
 .site-footer .logo { font-size: 60px; font-size: 3.75rem; color: #e1dece; }
-.site-footer .footer-navigation { padding: 30px 0; }
-.site-footer .footer-navigation a { display: inline-block; padding: 0 20px; line-height: 1; color: #9d9879; font-weight: 400; border-right: 1px solid #9d9879; font-size: 14px; font-size: 0.875rem; -webkit-transition: .3s ease; transition: .3s ease; }
-@media screen and (max-width: 480px) { .site-footer .footer-navigation a { display: block; padding: 10px 0; border-right: none; } }
-.site-footer .footer-navigation a:hover { color: #f16a54; }
-.site-footer .footer-navigation a:last-child { border-right: none; }
+.site-footer { text-align: center; background: white; }
+.homepage .site-footer .footer-navigation { float: none; margin: 0 auto; }
+@media screen and (max-width: 990px) { .homepage .site-footer .footer-navigation { float: right; } }
+.site-footer .footer-navigation .menu { list-style: none; padding-left: 0; margin: 0; display: inline-block; }
+@media screen and (max-width: 990px) { .site-footer .footer-navigation .menu { display: none; } }
+@media screen and (min-width: 991px) { .site-footer .footer-navigation .menu { display: inline-block; } }
+.site-footer .footer-navigation .menu-item { display: inline-block; padding: 30px 0; margin: 0; }
+.site-footer .footer-navigation .menu-item a { display: inline-block; padding: 0 20px; line-height: 1; color: #9d9879; font-weight: 400; font-size: 14px; font-size: 0.875rem; border-bottom: 2px solid transparent; -webkit-transition: .3s ease; transition: .3s ease; border-right: 1px solid #9d9879; }
+.site-footer .footer-navigation .menu-item:last-child a { border-right: none; }
+.site-footer .footer-navigation .menu-item.current-menu-item, .site-footer .footer-navigation .menu-item:hover { color: #f16a54; border-bottom: 2px solid #f16a54; }
+.site-footer .footer-navigation .menu-item.current-menu-item a, .site-footer .footer-navigation .menu-item:hover a { color: #f16a54; }
+
 .site-footer .subscribe { position: relative; display: inline-block; width: 50%; }
 @media screen and (max-width: 990px) { .site-footer .subscribe { width: 100%; } }
 .site-footer .subscribe input { outline: none; }

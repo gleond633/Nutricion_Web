@@ -56,11 +56,11 @@
 }
 
 .flex-control-nav li a:hover{
-	background: ##c09ead;
+	background: #c09ead;
 }
 
 .flex-control-nav li a.flex-active{
-	background: ##c09ead;	
+	background: #c09ead;	
 }
 
 .flex-direction-nav a{
@@ -110,8 +110,8 @@
 	width: 100%;
 	font-size: 55px;
 	color:#2980B9;
-	#A2D9CE;
-	#9C640C;
+	/*#A2D9CE;
+	#9C640C;*/
 	font-weight: bold;
 }
 
@@ -131,4 +131,8 @@
 
 .flexslider:hover .flex-direction-nav .flex-next:hover{
 	opacity: 1;
+}
+
+@media (max-width: 640px){
+	.flex-caption p{ font-size: 22px; }
 }

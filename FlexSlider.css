@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'flexslider-icon';
+  font-family:'flexslider-icon';
   src: url('Fonts-Slider/flexslider-icon.eot');
-  src: url('Fonts-Slider/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('Fonts-Slider/flexslider-icon.woff') 
+  src: url('Fonts-Slider/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('Fonts-Slider/flexslider-icon.woff')
   format('woff'), url('Fonts-Slider/flexslider-icon.ttf') format('truetype'), url('Fonts-Slider/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;

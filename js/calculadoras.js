@@ -75,10 +75,10 @@ var pesoIdeal = function(){
 	var desplegar_resultado = "Su peso ideal sería estar en "+Math.floor(pI)+" kg.";
 	var recomendacion;
 	if (pI > peso) { 
-		recomendacion = "<a href='offer.html#bajo_peso'>Ver dieta recomendada</a>";
+		recomendacion = "<a href='dietas.html#bajo_peso'>Ver dieta recomendada</a>";
 	} else if (pI < peso) {
-		recomendacion = "<a href='offer.html#sobre_peso'>Ver dieta recomendada</a>";
-	} else {recomendacion = "<a href='offer.html#peso_normal'>Ver dieta recomendada</a>";}
+		recomendacion = "<a href='dietas.html#sobre_peso'>Ver dieta recomendada</a>";
+	} else {recomendacion = "<a href='dietas.html#peso_normal'>Ver dieta recomendada</a>";}
 	
 	document.getElementById("resultado_pesoideal").innerHTML = desplegar_resultado;
 	document.getElementById("recomendacion_pesoideal").innerHTML = recomendacion;

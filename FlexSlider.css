@@ -12,7 +12,7 @@
 	padding: 0;
 }
 
-.FlexSlider{
+.flexslider{
 	width: 100%;
 	position: relative;
 }
@@ -48,7 +48,7 @@
 
 .flex-control-nav li a{
 	display: block;
-	background: #c09ead;
+	background: #777777;
 	width: 12px;
 	height: 12px;
 	border-radius: 12px;
@@ -56,21 +56,21 @@
 }
 
 .flex-control-nav li a:hover{
-	background: #c09ead;
+	background: #2E2E2E;
 }
 
 .flex-control-nav li a.flex-active{
-	background: #c09ead;	
+	background: #2E2E2E;	
 }
 
 .flex-direction-nav a{
 	display: block;
 	text-decoration: none;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	z-index: 999;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	overflow: hidden;
 	opacity: 0;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -93,25 +93,21 @@
   font-size: 40px;
   display: inline-block;
   content: '\f001';
-  color: #c09ead;
+  color: #fff;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
 
-
-/*cambia el color de las letras iniciales */
 .flex-caption p{
 	font-family: Lato;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	text-align: center;
 	width: 100%;
-	font-size: 55px;
+	font-size: 45px;
 	color:#2980B9;
-	/*#A2D9CE;
-	#9C640C;*/
 	font-weight: bold;
 }
 
@@ -134,5 +130,11 @@
 }
 
 @media (max-width: 640px){
-	.flex-caption p{ font-size: 22px; }
+ .flex-caption p{ font-size: 22px; }
 }
+
+
+
+
+
+

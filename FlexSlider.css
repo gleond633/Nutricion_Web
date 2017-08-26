@@ -100,10 +100,10 @@
   content: '\f002';
 }
 
-.flex-caption p{
+.flex-caption{
 	font-family: Lato;
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	text-align: center;
 	width: 100%;
 	font-size: 45px;

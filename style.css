@@ -159,7 +159,7 @@ Separar de la de Nelson*/
 .dieta1-section { background-color: #FFFFFF; color: #000000; }
 .dieta1-section .category-title { color: #fbab18; }
 .dieta1-section .boton1 { background-color: #f16a54; color: #1C1C1C; -webkit-transition: .3s ease; transition: .3s ease; }
-.dieta1-section .boton1:hover { background-color: #E4DDE6; }
+.dieta1-section .boton1:hover { background-color: #E4DDE6;}
 
 .dieta2-section { background-color: #E1DECE; color: #1C1C1C;}
 .dieta2-section .category-title { color: #48172d; }

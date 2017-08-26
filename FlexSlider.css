@@ -107,8 +107,9 @@
 	text-align: center;
 	width: 100%;
 	font-size: 45px;
-	color:#2980B9;
+	color:#f16a54;
 	font-weight: bold;
+	text-shadow: 2px 2px #000;
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev{
